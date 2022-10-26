@@ -13,11 +13,11 @@ Team Members Names :
 
                    Kapil Bansal (https://github.com/kapil000001)
                      
-                   Shivanshu Singh ()
+                   Shivanshu Singh (https://github.com/29shiv)
                      
-                   Dhiraj Kumar Singh ()
+                   Dhiraj Kumar Singh (https://github.com/dhirajsingh20215137)
                      
-                   Harshika Singh ()
+                   Harshika Singh (https://github.com/singharshika)
                      
 Proposed Features: 
                    
