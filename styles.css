@@ -1,0 +1,11 @@
+#head{
+    margin: 5px;
+    border: 20px;
+    padding: 5px;
+    border-radius: 2px;
+    border-color: blue;
+}
+#list{
+    text-decoration: none;
+    
+}
