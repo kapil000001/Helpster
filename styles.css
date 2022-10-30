@@ -1,11 +1,22 @@
-#head{
+h1{
     margin: 5px;
     border: 20px;
     padding: 5px;
     border-radius: 2px;
-    border-color: blue;
+    border-color: rgb(72, 72, 242);
+    background-color: aqua;
 }
-#list{
-    text-decoration: none;
-    
+
+.navbar li{
+    float: left;
+    list-style-type: none;
+    margin: 5px;
+}
+
+.navbar ul{
+    overflow: auto;
+}
+
+.heads #searchBox{
+    float: left;
 }
