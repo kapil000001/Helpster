@@ -1,28 +1,144 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Helpster</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-   <nav class = "navbar">
-        <ul>
-            <li><h1>Helpster</h1></li>            
-            <li>
-                <input type="text" placeholder="Search the Goods" id = "searchBox">
-            </li>
-            <li>
-                <a href="">Login</a>
-            </li>
-            <li>
-                <a href="">Register</a>
-            </li>
-        </ul>
-    </nav>
-    
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- <style>
+        .muted-text{
+            position: relative;
+            left: 45%;
 
-</body>
+        }
+
+        /* .card > .card-footer{
+            overflow: auto;
+        } */
+        .card-footer > .muted-text{
+            overflow: auto;
+        }
+    </style> -->
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">HELPSTER</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">Disabled</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="explore" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+      <div class="card-group">
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1552872673-9b7b99711ebb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8MTkyMCUyMHglMjAxMDgwfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">HELPSTER</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          </div>
+          <div class="d-grid gap-2">
+            <button type="button" class="btn btn-outline-success">HELPSTER</button>
+            
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1475924156734-496f6cac6ec1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8MTkyMCUyMHglMjAxMDgwfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">LEND</h5>
+            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+          </div>
+          <div class="d-grid gap-2">
+            <button type="button" class="btn btn-outline-secondary">LEND</button>
+            
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://media.istockphoto.com/photos/fresh-green-grass-with-dew-drops-closeup-nature-background-picture-id611746924?b=1&k=20&m=611746924&s=170667a&w=0&h=hMRUGskMe3KaKzczWI4FoYopgMv-hAD1zG42bWc70NY=" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">BORROW</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+          </div>
+
+          <div class="d-grid gap-2">
+            <button type="button" class="btn btn-outline-primary">Primary</button>
+            
+          </div>
+          <!-- <div class="card-footer">
+            <small class="text-muted muted-text">BORROW</small>
+            
+          </div> -->
+        </div>
+      </div>
+
+
+      <span class="placeholder col-12"></span>
+
+      <div class="card text-center">
+        <div class="card-header">
+          HELPSTER
+        </div>
+        <div class="card-body">
+         
+          <h5 class="card-title">ABOUT US</h5>
+          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+       
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title"></h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      
+    <script src="C:\Users\Dhiraj Kumar Singh\Documents\GitHub\Helpster\wallpaperflare.com_wallpaper.jpg" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  </body>
 </html>
+
+
+
