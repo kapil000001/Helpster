@@ -1,27 +1,19 @@
-const http = require('http');
-
+const http = require('http')
+const fs = require('fs')
+const filecontent = fs.readFile("index.html" , (err) => {
+    if (err){
+        res.end("error : 404");
+    }
+});
 
 const server = http.createServer((req,res) => {
-    console.log(req,url);
-    if (req.url == "/"){
-        res.end("Hello there");
-    }
-    else if (req.url == "/about"){
-        console.log("hello about us sides");
-    }
-    else if (req.url == "/Helpster"){
-        res.end("HEllo !! Welcome to our site");
-    }
-    else {
-        res.writeHead(404);
-        res.end("erroe 404: page not found");
-    }
-    res.end("server started");
+    res.writeHead(200 , {"content-type" : "text/html"})
+    res.end(filecontent)
 });
 
-server.listen(3000 , () => {
-    console.log("happy");
-});
+server.listen(3000 , '127.0.0.1' , () => {
+    console.log("Listening on port 3000")
+})
 
 
  
