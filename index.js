@@ -1,9 +1,10 @@
 const http = require('http')
 const fs = require('fs')
-const filecontent = fs.readFile("index.html" , (err) => {
+const filecontent = fs.readFileSync(__dirname + "/index.html" ,"utf-8",(err) => {
     if (err){
         res.end("error : 404");
     }
+    else res.end();
 });
 
 const server = http.createServer((req,res) => {
