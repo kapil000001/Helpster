@@ -1,0 +1,23 @@
+{
+  "name": "helpster",
+  "version": "1.0.0",
+  "description": "project helpster",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kapil000001/Helpster.git"
+  },
+  "author": "Helpster Team",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kapil000001/Helpster/issues"
+  },
+  "homepage": "https://github.com/kapil000001/Helpster#readme",
+  "dependencies": {
+    "chalk": "^5.1.2",
+    "validator": "^13.7.0"
+  }
+}
