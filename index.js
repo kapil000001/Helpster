@@ -18,7 +18,7 @@ const server = http.createServer((req,res) => {
         });
     }
     else if (req.url == '/register'){
-        const filecontent = fs.readFile('register.html',(err,data) => {
+        const filecontent = fs.readFile('Register.html',(err,data) => {
             if (err) {
                 res.end("error 404 : page not found");
             }
