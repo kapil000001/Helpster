@@ -17,8 +17,12 @@
   },
   "homepage": "https://github.com/kapil000001/Helpster#readme",
   "dependencies": {
+    "bcrypt": "^5.1.0",
+    "body-parser": "^1.20.1",
     "chalk": "^5.1.2",
     "express": "^4.18.2",
+    "mongodb": "^4.11.0",
+    "path": "^0.12.7",
     "validator": "^13.7.0"
   }
 }
