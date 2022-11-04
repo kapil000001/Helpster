@@ -1,4 +1,4 @@
-const { MongoUnexpectedServerResponseError } = require("mongodb");
+const mongoose = require("mongodb");
 
 const Login_btn = getElementById('Button');
 Login_btn.addEventListner = Allert();
@@ -6,8 +6,8 @@ Login_btn.addEventListner = Allert();
 const username = getElementById('userName');
 const pass = getElementById('pwd');
 
-if (username == MongoUnexpectedServerResponseError.username){
-    if (pass == MongoUnexpectedServerResponseError.password)
+if (username == users.username){
+    if (pass == users.password)
     {
         const Allert = () => {
             document.allert("Login Successful");
@@ -15,7 +15,7 @@ if (username == MongoUnexpectedServerResponseError.username){
         }
     }
     else {
-        allert("Wrong Password");
+        document.allert("Wrong Password");
     }
 }
 else{
