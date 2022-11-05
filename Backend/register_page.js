@@ -1,17 +1,27 @@
 
+const form = document.getElementById("register-form")
 
-const button = getElementById('btn');
-const userName = getElementById('username');
-const Email = getElementById('email');
-const MOb = getElementById('userNum');
-const Clg = getElementById('userClg');
-const pass = getElementById('password');
+// const userName = document.getElementById('username');
+const userEmail = document.getElementById('email').value;
+// const MOb = document.getElementById('userNum');
+const userClg = document.getElementById('clg-name').value;
+const userPass = document.getElementById('psw').value;
+const confirmPass = document.getElementById('psw-repeat').value;
 
+form.addEventListener('submit' , registeruser);
 
+async function registeruser(event){
+    event.preventdefault();
 
-button.onmouseclick = fun();
-
-const fun = () => {
-    document.aller(`Thanks ${userName} for registering`);
-    window.open('Login.html');
+    const result = await fetch('/api/regsiter' , {
+        method: 'POSt',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+            userEmail,
+            userClg,
+            userPass
+        })
+    }).then(res => res.json())
 }
