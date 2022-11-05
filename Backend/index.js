@@ -5,7 +5,7 @@ const fs = require('fs');
 const e = require('express');
 
 const filecontent = fs.readFileSync(`../Frontend/index.html`);
-const DB = 'mongodb+srv://Kapil_Bansal:k@p1/_786@cluster0.uxvu0x9.mongodb.net/Helpster?retryWrites=true&w=majority';
+const DB = 'mongodb+srv://Shivanshu_Singh:OPKL@123@cluster0.uxvu0x9.mongodb.net/Helpster?retryWrites=true&w=majority';
 
 
 mongoose.connect(DB).then(() => {
