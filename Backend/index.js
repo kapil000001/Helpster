@@ -3,8 +3,10 @@ const mongoose = require('mongoose');
 const http = require('http')
 const fs = require('fs');
 const e = require('express');
+
 const filecontent = fs.readFileSync(`../Frontend/index.html`);
 const DB = 'mongodb+srv://Kapil_Bansal:k@p1/_786@cluster0.uxvu0x9.mongodb.net/Helpster?retryWrites=true&w=majority';
+
 
 mongoose.connect(DB).then(() => {
     console.log("connection success");
@@ -27,7 +29,9 @@ const server = http.createServer((req,res) => {
         });
     }
     else if (req.url == '/register'){
+
         const filecontent = fs.readFile(`../Frontend/index.html`,(err,data) => {
+
             if (err) {
                 res.end("error 404 : page not found");
             }
@@ -35,7 +39,9 @@ const server = http.createServer((req,res) => {
         });
     }
     else {
+
         const filecontent = fs.readFile(`../Frontend/index.html`,(err,data) => {
+
             if (err) {
                 res.end("error 404 : page not found");
             }
