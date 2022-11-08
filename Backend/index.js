@@ -5,12 +5,13 @@ const fs = require('fs');
 const e = require('express');
 
 const filecontent = fs.readFileSync(`../Frontend/index.html`);
-const DB = 'mongodb+srv://Shivanshu_Singh:OPKL@123@cluster0.uxvu0x9.mongodb.net/Helpster?retryWrites=true&w=majority';
+const DB = 'mongodb+srv://Shivanshu_Singh:shivanshu12@cluster0.ydletpu.mongodb.net/helpster?retryWrites=true&w=majority';
 
 
 mongoose.connect(DB).then(() => {
     console.log("connection success");
 }).catch((err) => {
+    console.log(err);
     console.log("connection failed")
 });
 
@@ -21,7 +22,7 @@ const server = http.createServer((req,res) => {
         res.end(filecontent);
     }
     else if (req.url == '/login'){
-        const filecontent = fs.readFile(`../Frontend/index.html`,(err,data) => {
+        const filecontent = fs.readFile(`../Frontend/Login.html`,(err,data) => {
             if (err) {
                 res.end("error 404 : page not found");
             }
@@ -30,7 +31,7 @@ const server = http.createServer((req,res) => {
     }
     else if (req.url == '/register'){
 
-        const filecontent = fs.readFile(`../Frontend/index.html`,(err,data) => {
+        const filecontent = fs.readFile(`../Frontend/Register.html`,(err,data) => {
 
             if (err) {
                 res.end("error 404 : page not found");
