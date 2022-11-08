@@ -131,6 +131,7 @@
     "tslib": "^2.4.1",
     "type-is": "^1.6.18",
     "unpipe": "^1.0.0",
+    "url": "^0.11.0",
     "util": "^0.10.4",
     "util-deprecate": "^1.0.2",
     "utils-merge": "^1.0.1",
