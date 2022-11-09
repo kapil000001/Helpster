@@ -26,17 +26,11 @@
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container-fluid  d-flex justify-content-between">
-        <div id = "mylogo">
-                <a class="navbar-brand" href="#">HELPSTER</a>
-        </div>
-       
-        <div id = "mysearch">
-                <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="explore" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-        </div>
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">HELPSTER</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
@@ -44,9 +38,9 @@
             </li>
             <li class="nav-item">
               <a class="nav-link active" href="Register.html">Register</a>
-              <!-- <a class="nav-link" href="Register.html">Register</a> -->
+              <a class="nav-link" href="Register.html">Register</a>
             </li>
-            <!-- <li class="nav-item dropdown">
+            <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Dropdown
               </a>
@@ -59,14 +53,28 @@
             </li>
             <li class="nav-item">
               <a class="nav-link disabled">Disabled</a>
-            </li> -->
+            </li>
           </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="explore" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
         </div>
       </div>
     </nav>
 
       <div class="card-group">
-        
+        <div class="card">
+          <img src="https://images.unsplash.com/uploads/14122621859313b34d52b/37e28531?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDl8fGJpY3ljbGUlMjAxNDAweDQwMHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">HELPSTER</h5>
+            <p class="card-text">HELPSTER is a bicycle rental site which primarily serve people who do not have access to a vehicle, typically travellers and particularly embers and others charge a monthly or yearly fee.</p>
+          </div>
+          <div class="d-grid gap-2">
+            <button type="button" class="btn btn-outline-success">HELPSTER</button>
+            
+          </div>
+        </div>
         <div class="card">
           <img src="https://images.unsplash.com/photo-1482325952211-520da0ec9ae0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjJ8fGJpY3ljbGUlMjAxNDAweDQwMHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60" alt="...">
           <div class="card-body">
@@ -77,17 +85,6 @@
             <button type="button" class="btn btn-outline-secondary" >LEND</button>
             
           </div>
-        </div>
-        <div class="card">
-                <img src="./images/logo.jpeg" alt="..." class="logo">
-                <!-- <div class="card-body">
-                    <h5 class="card-title">HELPSTER</h5>
-                    <p class="card-text">HELPSTER is a bicycle rental site which primarily serve people who do not have access to a vehicle, typically travellers and particularly embers and others charge a monthly or yearly fee.</p>
-                  </div>
-                  <div class="d-grid gap-2">
-                    <button type="button" class="btn btn-outline-success">HELPSTER</button>
-                    
-                  </div> -->
         </div>
         <div class="card">
           <img src="https://images.unsplash.com/photo-1494375364506-901512970ad4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGJpY3ljbGUlMjAxNDAweDQwMHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60" class="card-img-top" alt="...">
@@ -106,10 +103,9 @@
           </div> -->
         </div>
       </div>
-      
 
 
-      <!-- <span class="placeholder col-12"></span> -->
+      <span class="placeholder col-12"></span>
 
      
       
@@ -120,9 +116,7 @@
       
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-<div class="marquee">
-        Lending and Borrowing helps in creatings bonds and so does the Helpster
-</div>
+      
       <!--footer starts from here-->
       <footer class="footer">
       <div class="container bottom_border">
@@ -136,7 +130,6 @@
       
       
       </div>
-
       
       
       <div class=" col-sm-4 col-md  col-6 col">
@@ -214,6 +207,5 @@
     <script src="C:\Users\Dhiraj Kumar Singh\Documents\GitHub\Helpster\wallpaperflare.com_wallpaper.jpg" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
   </body>
 </html>
-
 
 
